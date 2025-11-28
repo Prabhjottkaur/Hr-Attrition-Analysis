@@ -34,21 +34,23 @@ Data was provided in two tables:
 # *1. Employees Table*
 | Column | Description |
 |--------|-------------|
-| EmployeeID 
-| EmployeeName 
-| PositionID 
-| ManagerID 
-| RecruitmentSource 
-| Salary
-| DateOfHire 
-| DateOfTermination 
+| EmployeeID | Unique employee identifier |
+| EmployeeName | Name of employee |
+| PositionID | Foreign key for position |
+| ManagerID | Reporting manager |
+| RecruitmentSource | Employee recruitment source |
+| Income | Employee monthly income |
+| DateOfHire | Hiring date |
+| DateOfTermination | Termination date (blank if active) |
+
 
 # *2. Positions Table*
 | Column | Description |
 |--------|-------------|
-| PositionID 
-| PositionName 
-| Department 
+| PositionID  | Unique job position ID |
+| PositionName | Role name |
+| Department | Department name |
+
 
 ---
 
@@ -123,6 +125,7 @@ If DateOfTermination is null → "Active" Else → "Terminated".
    source.       
 
 ---
+
 
 
 
